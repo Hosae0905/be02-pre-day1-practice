@@ -1,10 +1,10 @@
 package day3.poketmon;
 
-public class FlyPokemon extends Pokemon {
+public class FlyPoketmon extends Poketmon {
 
     Integer z;
 
-    public FlyPokemon(String name, Integer hp, Integer exp, Integer attackDamage, Integer level, String type, Integer x, Integer y) {
+    public FlyPoketmon(String name, Integer hp, Integer exp, Integer attackDamage, Integer level, String type, Integer x, Integer y) {
         super(name, hp, exp, attackDamage, level, type, x, y);
     }
 

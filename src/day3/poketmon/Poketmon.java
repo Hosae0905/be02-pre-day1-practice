@@ -1,5 +1,5 @@
 package day3.poketmon;
-public class Pokemon {
+public class Poketmon {
     String name;
     Integer hp;
     Integer exp;
@@ -9,7 +9,7 @@ public class Pokemon {
     Integer x;
     Integer y;
 
-    public Pokemon(String name, Integer hp, Integer exp, Integer attackDamage, Integer level, String type, Integer x, Integer y) {
+    public Poketmon(String name, Integer hp, Integer exp, Integer attackDamage, Integer level, String type, Integer x, Integer y) {
         this.name = name;
         this.hp = hp;
         this.exp = exp;
@@ -34,7 +34,7 @@ public class Pokemon {
 
     // TODO: 레벨업
     Integer levelUp() {
-        level++;
+        this.level++;
         this.attackDamage += this.attackDamage * 20 / 100;
         this.hp += this.hp * 20 / 100;
 
@@ -45,7 +45,7 @@ public class Pokemon {
     }
 
     // TODO: 공격 관련 기능
-    void attackTarget(Pokemon monster) {
+    void attackTarget(Poketmon monster) {
         System.out.printf("가랏 %s! %s에게 공격!!\n", this.name, monster.name);
         monster.hp -= attackDamage;
         if (monster.hp <= 0) {
@@ -56,7 +56,7 @@ public class Pokemon {
         System.out.printf("현재 %s의 남은 채력 %d\n", monster.name, monster.hp);
     }
 
-    void attacked(Pokemon monster) {
+    void attacked(Poketmon monster) {
         System.out.printf("%s로부터 공격을 받고 있습니다. %s: 아아아아아아아아아아악\n", monster.name, this.name);
         this.hp -= monster.attackDamage;
         if (this.hp <= 0) {

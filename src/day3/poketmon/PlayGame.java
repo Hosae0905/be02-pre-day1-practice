@@ -3,7 +3,7 @@ package day3.poketmon;
 public class PlayGame {
     public static void main(String[] args) {
         // TODO: 포켓몬 생성
-        Pokemon pika = new Pokemon(
+        Poketmon pika = new Poketmon(
                 "피카츄",
                 240,
                 0,
@@ -17,7 +17,7 @@ public class PlayGame {
 
 
         // TODO: 공중 포켓몬 생성
-        FlyPokemon butterfly = new FlyPokemon(
+        FlyPoketmon butterfly = new FlyPoketmon(
             "버터풀",
                 200,
                 0,
