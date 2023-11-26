@@ -1,4 +1,4 @@
-package day4.sigletonTest.test1_Eager;
+package day4.sigletonTest;
 
 public class SingletonEager {
     // 싱글톤 클래스 객체를 담는 인스턴스 변수

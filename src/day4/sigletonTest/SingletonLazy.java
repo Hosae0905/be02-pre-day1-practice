@@ -1,4 +1,4 @@
-package day4.sigletonTest.test1_Eager;
+package day4.sigletonTest;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

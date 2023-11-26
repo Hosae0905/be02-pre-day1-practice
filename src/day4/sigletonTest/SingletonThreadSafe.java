@@ -1,4 +1,4 @@
-package day4.sigletonTest.test1_Eager;
+package day4.sigletonTest;
 
 public class SingletonThreadSafe {
     // 싱글톤 클래스의 객체를 담을 변수 생성

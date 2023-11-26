@@ -1,4 +1,4 @@
-package day4.sigletonTest.test1_Eager;
+package day4.sigletonTest;
 
 public class SingletonBillPugh {
     // 생성자를 private로 선언하여 외부에서 객체 생성을 금지
