@@ -38,27 +38,27 @@ public class 기능개발 {
             }
         }*/
 
-        ArrayList<Integer> list = new ArrayList<>();
-        Queue<Integer> queue = new LinkedList<>();
+        ArrayList<Integer> list = new ArrayList<>();    // 배포되는 기능의 갯수를 담을 리스트
+        Queue<Integer> queue = new LinkedList<>();      // 작업이 걸리는 기간을 담을 큐
 
         for (int i = 0; i < progresses.length; i++) {
             if ((100 - progresses[i]) % speeds[i] == 0) {
-                queue.add((100 - progresses[i]) / speeds[i]);
+                queue.add((100 - progresses[i]) / speeds[i]);       // 작업이 걸린 기간을 담는다.
             } else {
-                queue.add((100 - progresses[i]) / speeds[i] + 1);
+                queue.add((100 - progresses[i]) / speeds[i] + 1);   // 작업이 걸린 기간을 담는다.
             }
         }
 
         int x = queue.poll();
         int count = 1;
         while (!queue.isEmpty()) {
-            if (x >= queue.peek()) {
+            if (x >= queue.peek()) {        // 첫 번째 작업 기간과 그 다음에 오는 기능의 작업 기간을 비교
                 count++;
                 queue.poll();
             } else {
-                list.add(count);
-                count = 1;
-                x = queue.poll();
+                list.add(count);        // 이때까지 했던 작업들을 리스트에 저장
+                count = 1;              // 배포 횟수 초기화
+                x = queue.poll();       // 비교 했을때 작업 기간이 더 높은 것으로 교체
             }
         }
 
