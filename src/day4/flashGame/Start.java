@@ -28,3 +28,16 @@ public class Start {
         }
     }
 }
+
+
+/**
+ * int --> Integer
+ * void --> x
+ * char --> Character
+ * double --> Double
+ * float --> Float
+ *
+ * '안' '녕' '하'[]
+ * "안녕하세요"
+ *
+ */

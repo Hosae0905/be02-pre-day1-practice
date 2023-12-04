@@ -2,7 +2,7 @@ package day3.lol;
 
 import java.util.Arrays;
 
-public class championInfo {
+public class championInfo{
     String name;
     Integer power;
     Integer attackRange;
