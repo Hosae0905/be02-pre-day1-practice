@@ -1,13 +1,13 @@
-package dataStructure.tree;
+package dataStructure.tree.treeStudy;
 
-import dataStructure.list.TreePrinter;
+import dataStructure.tree.TreePrinter;
 
 public class Node<E> implements TreePrinter.PrintableNode {
-    int data;
+    Integer data;
     Node<E> left;
     Node<E> right;
 
-    public Node(int data, Node<E> left, Node<E> right) {
+    public Node(int data) {
         this.data = data;
         this.left = null;
         this.right = null;
