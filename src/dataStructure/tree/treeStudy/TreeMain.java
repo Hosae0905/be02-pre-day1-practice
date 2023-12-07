@@ -33,5 +33,6 @@ public class TreeMain {
         System.out.print("후위 순회: ");
         tree.display("postorder");
         System.out.println();
+
     }
 }
