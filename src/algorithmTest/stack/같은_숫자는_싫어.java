@@ -1,7 +1,5 @@
-package stack;
+package algorithmTest.stack;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
 public class 같은_숫자는_싫어 {

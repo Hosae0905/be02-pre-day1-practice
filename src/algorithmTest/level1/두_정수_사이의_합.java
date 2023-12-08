@@ -1,4 +1,4 @@
-package level1;
+package algorithmTest.level1;
 
 public class 두_정수_사이의_합 {
     public static long solution(int a, int b) {

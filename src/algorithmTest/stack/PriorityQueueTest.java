@@ -1,4 +1,4 @@
-package stack;
+package algorithmTest.stack;
 
 import java.util.Collections;
 import java.util.PriorityQueue;

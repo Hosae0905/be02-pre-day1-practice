@@ -1,8 +1,6 @@
-package level1;
+package algorithmTest.level1;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class 나누어_떨어지는_숫자_배열 {
     public static int[] solution(int[] arr, int divisor) {

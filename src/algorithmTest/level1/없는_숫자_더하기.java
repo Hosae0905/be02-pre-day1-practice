@@ -1,4 +1,4 @@
-package level1;
+package algorithmTest.level1;
 
 public class 없는_숫자_더하기 {
 

@@ -1,7 +1,4 @@
-package level1;
-
-import java.util.Arrays;
-import java.util.List;
+package algorithmTest.level1;
 
 public class 자연수_뒤집어_배열_만들기 {
     public static int[] solution(long n) {

@@ -1,4 +1,4 @@
-package level1;
+package algorithmTest.level1;
 
 public class 하샤드_수 {
     public static boolean solution(int x) {

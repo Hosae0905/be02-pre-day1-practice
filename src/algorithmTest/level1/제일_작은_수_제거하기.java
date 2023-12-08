@@ -1,4 +1,4 @@
-package level1;
+package algorithmTest.level1;
 
 public class 제일_작은_수_제거하기 {
     public static int[] solution(int[] arr) {

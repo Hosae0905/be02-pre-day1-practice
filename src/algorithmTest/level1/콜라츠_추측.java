@@ -1,4 +1,4 @@
-package level1;
+package algorithmTest.level1;
 
 /**
  * 1-1. 입력된 수가 짝수라면 2로 나눕니다.

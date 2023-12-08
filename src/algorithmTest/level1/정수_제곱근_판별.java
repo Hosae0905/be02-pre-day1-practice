@@ -1,4 +1,4 @@
-package level1;
+package algorithmTest.level1;
 
 public class 정수_제곱근_판별 {
     public static long solution(long n) {

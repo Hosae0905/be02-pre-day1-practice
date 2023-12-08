@@ -1,4 +1,4 @@
-package level1;
+package algorithmTest.level1;
 
 public class 음양_더하기 {
     public static int solution(int[] absolutes, boolean[] signs) {

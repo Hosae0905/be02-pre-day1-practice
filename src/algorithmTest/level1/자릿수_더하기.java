@@ -1,6 +1,4 @@
-package level1;
-
-import java.util.Arrays;
+package algorithmTest.level1;
 
 public class 자릿수_더하기 {
 

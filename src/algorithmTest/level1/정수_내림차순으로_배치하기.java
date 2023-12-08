@@ -1,9 +1,6 @@
-package level1;
+package algorithmTest.level1;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
 
 public class 정수_내림차순으로_배치하기 {
     public static long solution(long n) {
@@ -16,7 +13,7 @@ public class 정수_내림차순으로_배치하기 {
 //            n /= 10;
 //        }
 //
-//        list.sort(new Comparator<Long>() {
+//        list.algorithmTest.sort(new Comparator<Long>() {
 //            @Override
 //            public int compare(Long o1, Long o2) {
 //                if(o1 < o2) return 1;

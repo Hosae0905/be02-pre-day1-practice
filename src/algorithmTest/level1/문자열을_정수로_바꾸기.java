@@ -1,4 +1,4 @@
-package level1;
+package algorithmTest.level1;
 
 public class 문자열을_정수로_바꾸기 {
     public static int solution(String s) {

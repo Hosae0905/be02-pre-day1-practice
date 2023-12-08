@@ -26,7 +26,7 @@ public class MyStack<E> {
     }
 
     public boolean isFull() {
-//        if (top == stack.length - 1) {
+//        if (top == algorithmTest.stack.length - 1) {
 //            return true;
 //        } else {
 //            return false;

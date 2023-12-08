@@ -1,4 +1,4 @@
-package level1;
+package algorithmTest.level1;
 
 public class x만큼_간격이_있는_n개의_숫자 {
     public static long[] solution(int x, int n) {
