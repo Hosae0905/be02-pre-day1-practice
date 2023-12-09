@@ -2,7 +2,7 @@ package algorithm.sort;
 
 public class MiddleQuickSort {
 
-    static int count = 0;
+    int quickCount = 0;
 
     public void sort(int[] arr) {
         quickSort(arr, 0, arr.length - 1);
@@ -15,10 +15,9 @@ public class MiddleQuickSort {
 
         int pivot = partition(arr, low, high);
 
-        count++;
-
         quickSort(arr, low, pivot);
         quickSort(arr, pivot + 1, high);
+
     }
 
     private int partition(int[] arr, int left, int right) {
@@ -46,19 +45,14 @@ public class MiddleQuickSort {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
+        quickCount++;
     }
 
-    public static void main(String[] args) {
-        MiddleQuickSort quickSort = new MiddleQuickSort();
-        int[] arr = { 10, 20, 30, 40, 50, 60 };
-
-        quickSort.sort(arr);
-
+    public void sortPrint(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
-
         System.out.println();
-        System.out.println(count);
+        System.out.println(quickCount);
     }
 }

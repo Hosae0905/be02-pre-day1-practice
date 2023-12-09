@@ -20,12 +20,6 @@ public class Astar {
     // 닫힌 목록
     List<Node> closeList;
 
-    /**
-     *    [2, 2] [3, 2] [4, 2]
-     *    [2, 3] [3, 3] [4, 3]
-     *    [2, 4] [3, 4] [4, 4]
-     */
-
     int[][] location = {
             {-1, -1},
             {0, -1},
@@ -115,7 +109,6 @@ public class Astar {
     public void addAdjacentNodes(Node node) {
         openList.add(node);
         sortList(openList);
-        return;
     }
 
     public void sortList(List<Node> nodes) {
@@ -168,7 +161,6 @@ public class Astar {
                 }
             }
         }
-        return;
     }
 
 

@@ -2,7 +2,8 @@ package algorithm.sort;
 
 public class LeftQuickSort {
 
-    static int count = 0;
+    int quickCount = 0;
+    int basicCount = 0;
 
     public void sort(int[] arr) {
         quickSort(arr, 0, arr.length - 1);
@@ -14,8 +15,6 @@ public class LeftQuickSort {
         }
 
         int pivot = partition(arr, low, high);      // 피벗을 기준으로 부분 리스트를 나눠준다.
-
-        count++;
 
         quickSort(arr, low, pivot - 1);     // 피벗을 기준으로 왼쪽 값들을 정렬
         quickSort(arr, pivot + 1, high);    // 피벗을 기준으로 오른쪽 값들을 정렬
@@ -47,34 +46,35 @@ public class LeftQuickSort {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
+        quickCount++;
     }
 
-    public static void main(String[] args) {
-        LeftQuickSort quickSort = new LeftQuickSort();
+    public void basicSort(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[i] < arr[j]) {
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                    basicCount++;
+                }
+            }
+        }
+    }
 
-        int[] arr = { 10, 7, 12, 52, 30, 25 };
-        int[] arr1 = { 10, 7, 12, 52, 30, 25 };
-
-        quickSort.sort(arr);
-
+    public void basicSortPrint(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
-        System.out.println(count);
+        System.out.println(basicCount);
+    }
 
-        count = 0;
-
-        for (int i = 0; i < arr1.length; i++) {
-            for (int j = 0; j < arr1.length; j++) {
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-                count++;
-            }
+    public void quickSortPrint(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
-
-        System.out.println(count);
-
+        System.out.println();
+        System.out.println(quickCount);
     }
 }
