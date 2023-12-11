@@ -16,22 +16,10 @@ public class MyStack<E> {
     }
 
     public boolean isEmpty() {
-//        if (top == -1) {
-//            return true;
-//        } else {
-//            return false;
-//        }
-
         return top == -1;
     }
 
     public boolean isFull() {
-//        if (top == algorithmTest.stack.length - 1) {
-//            return true;
-//        } else {
-//            return false;
-//        }
-
         return top == stack.length - 1;
     }
 

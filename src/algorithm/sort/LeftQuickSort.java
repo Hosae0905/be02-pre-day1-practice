@@ -1,9 +1,11 @@
 package algorithm.sort;
 
+import java.util.Arrays;
+
 public class LeftQuickSort {
 
     int quickCount = 0;
-    int basicCount = 0;
+    int count = 0;
 
     public void sort(int[] arr) {
         quickSort(arr, 0, arr.length - 1);
@@ -46,28 +48,13 @@ public class LeftQuickSort {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
+//        count++;
+//        System.out.printf("%d회차: ", count);
+//        for (int k = 0; k < arr.length; k++) {
+//            System.out.print(arr[k] + " ");
+//        }
+//        System.out.println();
         quickCount++;
-    }
-
-    public void basicSort(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
-                if (arr[i] < arr[j]) {
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
-                    basicCount++;
-                }
-            }
-        }
-    }
-
-    public void basicSortPrint(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
-        System.out.println(basicCount);
     }
 
     public void quickSortPrint(int[] arr) {
@@ -75,6 +62,6 @@ public class LeftQuickSort {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
-        System.out.println(quickCount);
+        System.out.printf("총 횟수 = %d\n", quickCount);
     }
 }

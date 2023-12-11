@@ -63,10 +63,6 @@ public class MyQueue<E> {
         return queue.length;
     }
 
-//    private void resize() {
-//        queue = Arrays.copyOf(queue, queue.length + DEFAULT_SIZE);
-//    }
-
     private void resize(E value) {
         rear /= front;
 

@@ -6,25 +6,25 @@ public class QuickSortMain {
         LeftQuickSort quickSort = new LeftQuickSort();
         MiddleQuickSort middleQuickSort = new MiddleQuickSort();
 
-        int[] arr = { 10, 7, 12, 52, 30, 25, 9, 85, 66, 5, 15 };
-        int[] arr1 = { 10, 7, 12, 52, 30, 25, 9, 85, 66, 5, 15 };
-        int[] arr2 = { 90, 80, 70, 60, 50, 40, 30, 20, 10, 5, 4 };
-        int[] arr3 = { 90, 80, 70, 60, 50, 40, 30, 20, 10, 5, 4 };
-        int[] arr4 = { 10, 7, 12, 52, 30, 25, 9, 85, 66, 5, 15 };
+        int[] arr = { 90, 80, 70, 60, 50, 40, 30, 20, 10, 5 };
+        int[] arr1 = { 90, 80, 70, 60, 50, 40, 30, 20, 10, 5 };
+        int[] arr2 = { 90, 80, 70, 60, 50, 40, 30, 20, 10, 5 };
 
-        quickSort.sort(arr);
-        quickSort.basicSort(arr1);
-        quickSort.quickSortPrint(arr);
-        quickSort.basicSortPrint(arr1);
+        System.out.println("=======================퀵 정렬(가운데 피벗 설정)=================");
+        middleQuickSort.sort(arr);
+        middleQuickSort.sortPrint(arr);
 
-        quickSort.basicSort(arr2);
-        quickSort.basicSortPrint(arr2);
+        System.out.println();
 
-        middleQuickSort.sort(arr3);
-        middleQuickSort.sortPrint(arr3);
+        System.out.println("=======================퀵 정렬(왼쪽 피벗 설정)===================");
+        quickSort.sort(arr1);
+        quickSort.quickSortPrint(arr1);
 
-        middleQuickSort.sort(arr4);
-        middleQuickSort.sortPrint(arr4);
+        System.out.println();
+
+        System.out.println("=======================버블 정렬===============================");
+        middleQuickSort.basicSort(arr2);
+        middleQuickSort.basicSortPrint(arr2);
 
     }
 }
