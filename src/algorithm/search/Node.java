@@ -1,4 +1,4 @@
-package algorithm.Search;
+package algorithm.search;
 
 public class Node {
     int f;

@@ -1,4 +1,4 @@
-package algorithm.sort;
+package algorithm.sort.quickSort;
 
 public class RightQuickSort {
     // 정렬하는 코드
