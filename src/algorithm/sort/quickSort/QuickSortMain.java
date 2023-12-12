@@ -16,12 +16,6 @@ public class QuickSortMain {
 
         System.out.println();
 
-        System.out.println("=======================퀵 정렬(왼쪽 피벗 설정)===================");
-        quickSort.sort(arr1);
-        quickSort.quickSortPrint(arr1);
-
-        System.out.println();
-
         System.out.println("=======================버블 정렬===============================");
         middleQuickSort.basicSort(arr2);
         middleQuickSort.basicSortPrint(arr2);
