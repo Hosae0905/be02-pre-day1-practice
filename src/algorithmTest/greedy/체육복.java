@@ -1,6 +1,5 @@
 package algorithmTest.greedy;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class 체육복 {

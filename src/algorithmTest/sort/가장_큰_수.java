@@ -1,8 +1,10 @@
 package algorithmTest.sort;
 
+import java.util.Arrays;
+
 public class 가장_큰_수 {
     public static String solution(int[] numbers) {
-        String answer = "";
+        /*String answer = "";
         String num = "";
 
         for(int i = 0; i < numbers.length; i++) {
@@ -11,17 +13,32 @@ public class 가장_큰_수 {
 
         char[] list = num.toCharArray();
 
-        for (int i = 0; i < list.length; i++) {
-            char max = list[i];
-            for (int j = i; j < list.length; j++) {
-                if (max < list[j] && max != list[j]) {
-                    max = list[j];
-                }
+        char max = list[0];
+        for (int i = 1; i < list.length; i++) {
+            if (max < list[i]) {
+                max = list[i];
             }
             answer += max;
+        }*/
+
+        String[] str = new String[numbers.length];
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < str.length; i++) {
+            str[i] = String.valueOf(numbers[i]);
         }
 
-        return answer;
+        Arrays.sort(str, ((o1, o2) -> (o2 + o1).compareTo(o1 + o2)));
+
+        if (str[0].equals("0")) {
+            return "0";
+        }
+
+        for (int i = 0; i < str.length; i++) {
+            sb.append(str[i]);
+        }
+
+        return sb.toString();
     }
 
     public static void main(String[] args) {
