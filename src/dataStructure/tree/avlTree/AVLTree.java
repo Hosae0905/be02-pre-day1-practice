@@ -92,21 +92,6 @@ public class AVLTree {
         // 새로운 높이 구하기
         maxHeight(parent);
         maxHeight(newParent);
-
-
-//        parent.height = Math.max(getHeight(parent.left), getHeight(parent.right)) + 1;
-//        if (getHeight(parent.left) >= getHeight(parent.right)) {
-//            parent.height = getHeight(parent.left) + 1;
-//        } else if (getHeight(parent.right) >= getHeight(parent.left)){
-//            parent.height = getHeight(parent.right) + 1;
-//        }
-
-//        newParent.height = Math.max(getHeight(newParent.left), getHeight(newParent.right)) + 1;
-//        if (getHeight(newParent.left) >= getHeight(newParent.right)) {
-//            newParent.height = getHeight(newParent.left) + 1;
-//        } else if (getHeight(newParent.right) >= getHeight(newParent.left)) {
-//            newParent.height = getHeight(newParent.right) + 1;
-//        }
         
         // 위치가 변경된 노드들의 BF값 새로 구하기
         Integer parentBf = getBf(parent);
